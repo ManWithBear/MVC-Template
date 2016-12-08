@@ -1,0 +1,16 @@
+{% include 'header' %}
+#import "{{ prefix }}{{ module_info.name }}ViewController.h"
+#import "{{ prefix }}{{ module_info.name }}View.h"
+
+@interface {{ prefix }}{{ module_info.name }}ViewController () <{{ prefix }}{{ module_info.name }}ViewActionDelegate>
+@property (readonly, weak, nonatomic) {{ prefix }}{{ module_info.name }}View *aView;
+@end
+
+@implementation {{ prefix }}{{ module_info.name }}ViewController
+
+- ({{ prefix }}{{ module_info.name }}View *)aView {
+    return ({{ prefix }}{{ module_info.name }}View*)self.view;
+}
+
+#pragma mark - {{ prefix }}{{ module_info.name }}View action delegate
+@end

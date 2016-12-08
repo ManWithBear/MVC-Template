@@ -1,0 +1,12 @@
+name: bdk_mvc_objc
+summary: Generate view/viewController/xib stack for MVC in ObjC
+author: Denis Bogomolov
+version: 1.0.0
+license: MIT
+
+code_files:
+- {name: View.h, path: Code/View.h.liquid}
+- {name: View.m, path: Code/View.m.liquid}
+- {name: ViewController.h, path: Code/ViewController.h.liquid}
+- {name: ViewController.m, path: Code/ViewController.m.liquid}
+- {name: ViewController.xib, path: Code/ViewController.xib.liquid, is_resource}
